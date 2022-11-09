@@ -1,0 +1,66 @@
+/*hover*/
+
+button {
+    color: red;
+}
+
+button:hover {
+    color: blue;
+}
+
+/*of types*/
+
+.box > p:first-of-type {
+    color: red;
+    text-decoration: line-through;
+}
+
+.box > p:nth-of-type(3) {
+    color:aquamarine;
+}
+
+.box > p:last-of-type {
+    color: green;
+}
+
+.box > p:nth-last-of-type(2) {
+    color: hotpink;
+}
+
+.box > h1:only-of-type {
+    color: blue;
+}
+
+
+/*links*/
+a:link {
+    color: green; /*This accounts for unvisited links*/
+}
+
+a:visited {
+    color: purple; /*This accounts for visited links*/
+}
+
+/* hover on a link*/
+a:hover {
+    color:yellow;
+}
+
+/*selected link*/
+a:active {
+    color:cadetblue;
+}
+
+/*form inputs*/
+form > input:optional {
+    border: 2px solid blue; /*makes optional form inputs contain a blue border*/
+}
+
+form > input:required {
+    border: 2px solid green;
+}
+
+form > input:enabled {
+    border: 2px solid red; /*gives a red border to inputs that arent disabled*/
+}
+
