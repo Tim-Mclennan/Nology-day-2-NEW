@@ -1,0 +1,58 @@
+* {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.border {
+    border: 2px solid black;
+}
+
+.border h1 {
+    color:blue;
+    font-weight:bolder;
+}
+
+.border > p {
+    color: red;
+    text-decoration: underline;
+}
+
+.border li {
+    list-style-type: none;
+}
+
+.coral {
+    color: coral;
+    font-weight: bold;
+}
+
+.brown {
+    color: brown;
+}
+
+.firstdiv > h1 {
+    font-weight: 900;
+}
+
+.firstdiv p {
+    color: gray;
+    margin-left: 10px;
+}
+
+#para_A {
+    color: black;
+    font-style:italic;
+}
+
+.seconddiv p {
+    margin-left: 10px;   
+    text-decoration: underline;
+}
+
+.thirddiv p {
+    margin-left: 10px;   
+    color: blue;
+}
+
+#para_G {
+    color: black;
+}
