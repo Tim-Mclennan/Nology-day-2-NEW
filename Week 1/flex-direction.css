@@ -27,10 +27,6 @@ input, button {
     align-items: center;
 }
 
-.main-container1 > div {
-    margin: 10px;
-}
-
 .main-container2 {
     display: flex;
     flex-direction: row-reverse;
@@ -43,6 +39,7 @@ input, button {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 10px;
 }
 
 #card1 {
