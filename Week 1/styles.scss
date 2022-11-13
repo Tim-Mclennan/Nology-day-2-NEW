@@ -1,0 +1,12 @@
+.btn {
+    background-color: yellow;
+
+    &__text {
+        font-style: italic;
+
+        &--red {
+            color: red;
+        }
+
+    }
+}
