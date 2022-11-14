@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mixins</title>
+    <link rel="stylesheet" href="mixin.css">
+</head>
+<body>
+    <!-- What is a mixin? -->
+    <!-- Mixins allow you to define styles that can be re-used throughout your stylesheet. -->
+
+    <!-- Why do we use a mixin? -->
+    <!-- How do we parametise mixins? -->
+    <nav class="navbar">
+        <a>Home</a>
+        <a>About</a>
+        <a>News</a>
+    </nav>
+    <scetion>
+        <div class="gallery"> 
+            <img src="https://images.unsplash.com/photo-1668027686570-aff6795ed3c1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80">
+            <img src="https://images.unsplash.com/photo-1668027686570-aff6795ed3c1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80">
+            <img src="https://images.unsplash.com/photo-1668027686570-aff6795ed3c1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80">
+        </div>
+    </scetion>
+    <section class="card">
+        <div class="card__btn card__btn--small">
+            <p>Click me</p>
+        </div>
+        <div class=" card__btn card__btn--medium">
+            <p>Click me</p>
+        </div>
+        <div class="card__btn card__btn--large">
+            <p>Click me</p>
+        </div>
+    </section>
+    <section class="section-challenge">
+        <div class="challenge__card challenge__card--red-dotted"><p class="card__para--1">Button: This is centered, arial and bold with  a red border.</p></div>
+        <div class="challenge__card challenge__card--blue-solid"><p  class="card__para--2">Chip, this is centered, Arial and bold with a blue solid border.</p></div>
+        <div class="challenge__card challenge__card--blue-dashed"><p class="card__para--3">Chip, this is centered, arial and bold with a blue dashed border. </p></div>
+    </section>
+
+    <!-- EXTEND RULE -->
+    <!-- use the @extend rule whenver you dont have parameters. -->
+<!-- it is useful for when you have big blocks of smimilar code that only require miniscule changes in each element.  -->
+</body>
+</html>
