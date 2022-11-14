@@ -1,0 +1,31 @@
+@mixin default-flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@mixin size-mod($sm, $md, $lg) {
+    &--small {
+        font-size: $sm;
+    }
+
+    &--medium {
+        font-size: $md;
+    }
+
+    &--large {
+            font-size: $lg;
+    }
+}
+
+@mixin gold {
+    &--1 {
+        color: gold;
+    }
+    &--2 {
+        color: rgb(104, 95, 44);
+    }
+    &--3 {
+        color: rgb(244, 230, 152);
+    }
+}
