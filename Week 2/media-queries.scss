@@ -1,0 +1,12 @@
+@use "./screen-sizes";
+
+.btn {
+    @media only screen and (max-width: screen-sizes.$sm) {
+        font-size: 10px;
+        color: red;
+    }
+    @media only screen and (max-width: (screen-sizes.$sm + 1px)) {
+        font-size: 20px;
+        color: pink;
+    }
+}
