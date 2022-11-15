@@ -9,4 +9,86 @@
         }
 
     }
+
+    &:hover {
+        background-color: hotpink;
+    }
+}
+
+.greenbox {
+    border: 3px solid green;
+
+    &__header {
+        font-weight: bolder;
+        font-style: italic;
+        
+        &--left {
+            text-align: left;
+        }
+    }
+
+    
+}
+
+.paragraph {
+
+    &__blue {
+        color: blue;
+
+        &--line {
+            text-decoration: line-through;
+        }
+    }
+}
+
+.coralbox {
+    border: solid coral 2px;
+
+    &__header {
+        font-weight: 900;
+
+        &--center {
+            text-align: center;
+        }
+    }
+}
+
+// VARIABLES //@at-root
+$primary-background-color: lightblue;
+$text-color:    
+
+.btn {
+    background-color: $primary-background-color;
+
+    &__border {
+        border-width: 1px;
+        border-radius: 10px;
+
+        &--dashed {
+            border-style:dashed;
+        }
+    }
+
+    &__text {
+        font-weight: bold;
+
+        &--yellow {
+            color: yellow;
+        }
+    }
+}
+
+.para {
+    background-color: antiquewhite;
+    font-weight: 700;
+    padding: 10px;
+
+    &__border {
+        border-width: 1px;
+        border-radius: 10px;
+    }
+
+    &--yellow {
+        color: yellow;
+    }
 }

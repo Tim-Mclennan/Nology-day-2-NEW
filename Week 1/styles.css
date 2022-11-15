@@ -1,9 +1,17 @@
-.btn {
-  background-color: yellow;
-}
-.btn__text {
-  font-style: italic;
-}
-.btn__text--red {
-  color: red;
+/* Error: Expected digit.
+ *    ,
+ * 60 | .btn {
+ *    |  ^
+ *    '
+ *   Nology_Work\Week 1\styles.scss 60:2  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Expected digit.\a    \2577 \a 60 \2502  .btn {\d\a    \2502   ^\a    \2575 \a   Nology_Work\\Week 1\\styles.scss 60:2  root stylesheet";
 }
