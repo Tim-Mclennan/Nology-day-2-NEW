@@ -61,6 +61,16 @@ console.log(sum(10));
         console.log(students[i], i);
     }
 
+// loooping through an array backwards (using students example)
+const reversed = []; //storing new elements, starting from the last element
+
+for (let i=students.length-1; i >= 0; --i) {
+    reversed.push(students[i])
+}
+console.log(reversed);
+console.log(students);
+
+
 // Creating a new array with the same names but all uppercase:
     const upperCaseStudents = [];
     for(let i=0; i < students.length; ++i) {
@@ -77,4 +87,20 @@ console.log(sum(10));
         str += letters[i].toUpperCase()
     }
     console.log(str);
+
+// BREAK - iterating through an array for a specific element ( and stopping it with break keyword)
+
+const names = ['daniel', 'ella', 'jack', 'john'];
+const toFind = 'ella';
+let found = false;
+
+for (i=0; i < names.length; ++i) {
+
+    if(names[i] === toFind) {
+        found = true;
+        break; //this will stop the function from searching once the found variable is true.
+    }
+}
+
+// CONTINUE 
 

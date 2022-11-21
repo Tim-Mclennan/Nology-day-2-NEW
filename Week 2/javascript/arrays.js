@@ -11,17 +11,17 @@ const coach3 = "cal";
 // console.log(coach3);
 
 // Instead of doing this, you can store all values under one variable name.
-const coaches = [coach1, coach2, coach3, "Martyna"];
-console.log(coaches);
+    const coaches = [coach1, coach2, coach3, "Martyna"];
+    console.log(coaches);
 
 // what if you just needed to access one element? 
 //each element in an array has an index which you can call, starting at 0
-console.log(coaches[1]);
+    console.log(coaches[1]);
 
 // How to access the last element?
 // use the length property, and knowing that the last item will always have the length of the index -1.
-const lastItem = coaches.length;
-console.log(coaches[lastItem -1]);
+    const lastItem = coaches.length;
+    console.log(coaches[lastItem -1]);
 
 
 
@@ -37,14 +37,15 @@ console.log(coaches[lastItem -1]);
     const myArrayOfZeros = new Array(4).fill(0);
     console.log(myArrayOfZeros);
 
+    
 
 // ARRAY MANIPULATION
 
-    //ADDING ELEMENTS TO AN ARRAY
+//ADDING ELEMENTS TO AN ARRAY
     const students = []; //empty array initialise
     console.log(students.length);
 
-    //PUSH
+//PUSH
     students.push("Tim");
     students.push("timmy") // this will add an element to the end of the array
 
@@ -55,7 +56,7 @@ console.log(coaches[lastItem -1]);
     console.log(students.length);
     console.log(students);
 
-    //UNSHIFT
+//UNSHIFT
     students.unshift("amanda"); // this will add an element to the start
     console.log(students);
 
@@ -64,7 +65,7 @@ console.log(coaches[lastItem -1]);
     console.log(students.length);
 
 
-    // REMOVING ELEMENTS FROM AN ARRAY - two methods, either from the start or the end
+// REMOVING ELEMENTS FROM AN ARRAY - two methods, either from the start or the end
     students.pop(); // this removes an elements from the end.
     console.log(students);
 
@@ -83,18 +84,18 @@ console.log(coaches[lastItem -1]);
 
     
 
-    // INCLUDES - this will check whether or not a specific array has an element (Will return true or false)
+// INCLUDES - this will check whether or not a specific array has an element (Will return true or false)
     console.log(students.includes("john")); 
 
-    // INDEX.OF
+// INDEX.OF - checks index number of element
     console.log(students.indexOf("Tim"));
 
     if (students.includes("Tim")) {
-        console.log("Param is one of the students");
+        console.log("Tim is one of the students");
     }
 
     // .join
-    // THIS TURNS AN ARRAY OF STRINGS INTO ONE STRING
+    // This helps to turn an array of strings into one string. The join property will also let you add any string you want between those array elements.
     console.log(students.join(" + "))
 
 
