@@ -21,18 +21,18 @@
     console.log(i);
 } */
 
-// function sum(n) {
-//     let value = 0;
-//     let addArray = [];
+function sum(n) {
+    let value = 0;
+    let addArray = [];
     
-//     for (i = 1; i <= n; ++i) {
-//       addArray.push(i);
-//       value += i;
-//     }
-//     return `${addArray.join("+")} = ${value}`;
-//   }
+    for (i = 1; i <= n; ++i) {
+      addArray.push(i);
+      value += i;
+    }
+    return `${addArray.join("+")} = ${value}`;
+  }
   
-//   console.log(sum(5));
+  console.log(sum(5));
 
 // MVP:
 // Create a function with a for loop that will add all the numbers up to n

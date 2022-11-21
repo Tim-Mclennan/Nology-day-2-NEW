@@ -20,8 +20,8 @@
     console.log(stringNew);
 
 
-//Alternative method using a string instead of an array variable:
-    let word = "understand";
+//Alternative method using a string instead of an array variable. Major difference is using the += operator instead of push():
+    let word = "totally";
     let newString = "";
 
     for (let i=0; i<letters.length;++i) {
@@ -40,25 +40,25 @@
 // The new strings should be the same as the input with the vowels missing
 // E.g: calum => clm, rachel => rchl, martyna => mrtyn
 
-        let vowels = "computer";
-        let noVowels = "";
+        // let vowels = "computer";
+        // let noVowels = "";
 
-        for (i=0; i< vowels.length;++i) {
-            if ()
-        }
+        // for (i=0; i< vowels.length;++i) {
+        //     if ()
+        // }
 
-// let vowels = ["a", "e", "i", "o", "u"];
+let vowels = ["a", "e", "i", "o", "u"];
 
-// function removeVowels(name) {
-//   let rslOfRemoveMethod = "";
+function removeVowels(name) {
+  let rslOfRemoveMethod = "";
 
-//   for (let i = 0; i < name.length; ++i) {
-//     if (!vowels.includes(name[i])) {
-//       rslOfRemoveMethod += name[i];
-//     }
-//   }
-//   return rslOfRemoveMethod;
-// }
+  for (let i = 0; i < name.length; ++i) {
+    if (!vowels.includes(name[i])) {
+      rslOfRemoveMethod += name[i];
+    }
+  }
+  return rslOfRemoveMethod;
+}
 
-// console.log(removeVowels("computer"));
+console.log(removeVowels("computer"));
 
