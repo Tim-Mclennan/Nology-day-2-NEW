@@ -15,9 +15,14 @@ console.log(buttons)
 const divs = document.getElementsByClassName("container");
 console.log(divs)
 
+
+
 //one of the prperties each node has , is the classList. Using this, you can add, remove and toggle classes which is in the next example.
 console.log(divs[0].classList)
 
+ // using it for the body:
+ const body = document.querySelector("body");
+ console.log(body);
 
 // CHANGE LIGHT MODE EXAMPLE
     const modeBtn = document.getElementById("modeBtn");
@@ -30,10 +35,31 @@ console.log(divs[0].classList)
             divs[i].classList.toggle("darkmode");
         }
 
-        for (let i=0; i<buttons.length;i++) {
-            buttons[i].classList.toggle("darkmode");
-        }
+        // for (let i=0; i<buttons.length;i++) {
+        //     buttons[i].classList.toggle("darkmode");
+        // }
+        buttons.forEach((btn) => {
+            btn.classList.toggle("darkmode");
+        });
+
+
+        body.classList.toggle("darkmode");
+        heading.classList.toggle("darkmode");
     });
+
+   
+// using task example
+
+const taskBtn = document.querySelector("#taskbtn");
+
+taskBtn.addEventListener("click", () => {
+    console.log(taskInput.value);
+    if (taskInput.value === "") {
+        return alert("Please put in a task!");
+    }
+});
+
+
 
 
 

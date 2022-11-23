@@ -91,7 +91,7 @@ console.log(increasedNums);
 
 
 
-// USING REDUCE AS FILTER AND MAP COMBINED:
+// USING REDUCE INSTEAD OF FILTER AND MAP COMBINED:
 // Lets say you need an array of only even numbers, and you want them doubled.
 
     const numToFilterAndMap = [2, 3, 4, 5, 6];
