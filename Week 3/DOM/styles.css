@@ -1,0 +1,16 @@
+* {
+    font-family:'Courier New', Courier, monospace;
+}
+
+.container {
+    border: 2px solid purple;
+    margin: 30px;
+    border-radius: 12px;
+    padding: 15px;
+    width: 600px;
+}
+
+.button {
+    padding: 5px 10px;
+    background-color: rgb(221, 128, 146);
+}

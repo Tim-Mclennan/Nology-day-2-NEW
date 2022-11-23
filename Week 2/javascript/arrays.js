@@ -1,4 +1,4 @@
-// ARRAYS
+    // ARRAYS
 
 // arrays are a collection of data. It is JS's way of creating lists of information: 
 
