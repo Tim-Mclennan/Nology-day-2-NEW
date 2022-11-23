@@ -13,4 +13,10 @@
 .button {
     padding: 5px 10px;
     background-color: rgb(221, 128, 146);
+
+}
+
+.darkmode {
+    color: white;
+    background-color: cadetblue;
 }
