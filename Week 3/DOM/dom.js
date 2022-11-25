@@ -50,16 +50,47 @@ console.log(divs[0].classList)
    
 // using task example
 
-const taskBtn = document.querySelector("#taskbtn");
-
-taskBtn.addEventListener("click", () => {
-    console.log(taskInput.value);
-    if (taskInput.value === "") {
-        return alert("Please put in a task!");
-    }
-});
 
 
+
+// WE WANT TO ADD A LINE OF HTML TO A P TAG EVERY TIME A USER ENTERS A TASK: (<p>{taskInput.value}</p>)
+    // create an empty p element - this is empty.
+    // this means you will have to also create a text node - the value of our input.
+    // wre also need to tell the text to go inside the p tags.
+    // we need to tell the prepared element where to go on the page -> by selecting an existing element from our page 
+
+
+
+    // instead, you can create a function that adds html elements to the page:
+const createElement = (elementType, text, parent) => {
+    const newElement = document.createElement(elementType);
+
+    const textNode = document.createTextNode(text);
+
+    newElement.appendChild(textNode);
+
+    parent.appendChild(newElement);
+
+};
+
+
+
+    const taskBtn = document.querySelector("#taskbtn");
+    const taskList = document.querySelectorAll("#Tag");
+
+    taskBtn.addEventListener("click", () => {
+        if (taskInput.value === "") {
+            return alert("Please put in a task!");
+        }
+        console.log(taskInput.value);
+
+        //removing  a childnode:
+        taskList.removeChild(document.querySelector("#nothingPara"));
+
+        createElement("p", taskInput.value, taskList);
+
+    taskList.appendChild(para);
+    });
 
 
 
