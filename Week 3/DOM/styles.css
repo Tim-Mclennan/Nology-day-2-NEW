@@ -18,5 +18,6 @@
 
 .darkmode {
     color: white;
-    background-color: cadetblue;
+    background-color: darkblue;
+    border: 2px red solid;
 }
